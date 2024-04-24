@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tabela de Produtos</title>
+    <link rel="stylesheet" href="../CSS/Estoque.css">
+</head>
+<body>
+    <h1>Meu Estoque de Produtos</h1>
+    <table id="product-table">
+        <thead>
+            <tr>
+                <th>Produto</th>
+                <th>Preço</th>
+                <th>Quantidade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Produto A</td>
+                <td>R$ 10,00</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>Produto B</td>
+                <td>R$ 15,00</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>Produto C</td>
+                <td>R$ 20,00</td>
+                <td>8</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <form id="add-product-form">
+        <label for="product-name">Produto:</label>
+        <input type="text" id="product-name" required>
+
+        <label for="product-price">Preço:</label>
+        <input type="text" id="product-price" required>
+
+        <label for="product-quantity">Quantidade:</label>
+        <input type="text" id="product-quantity" required>
+
+        <button type="submit">Adicionar</button>
+    </form>
+
+    <script src="../JS/Estoque.js"></script>
+</body>
+</html>
+
+
+
+
+
+

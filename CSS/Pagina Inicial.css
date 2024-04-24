@@ -1,0 +1,157 @@
+body {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 100px;
+  background-color: #d8abab;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+h1 {
+  color: #ffffff;
+  background-color: #be0f0f;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+h2 {
+ color: #d41d1d;
+  background-color: #ffffff;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+
+form {
+  margin-bottom: 100px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.add-venda-button {
+  width: 48%;
+  padding: 10px;
+  background-color: #301ce9;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.finalizar-venda-button {
+  width: 48%;
+  padding: 10px;
+  background-color: #ff0000;
+  border: none;
+  color: #0025fa;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #4e65e7;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+#totalVendas {
+  text-align: right;
+  font-weight: bold;
+}
+
+.button-fechar-venda {
+  background-color: #ff0000;
+  color: #0025fa;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.button-fechar-venda:hover {
+  background-color: #cc0000;
+}
+
+.categories {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-image: url("file:///C:/Users/gbimt/Downloads/Design%20sem%20nome%20(13).png");
+  background-color: #f1f1f1;
+}
+
+.category-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.category-list li {
+  margin-right: 10px;
+}
+
+.category-button {
+  background-color: #f1f1f1;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.category-button:hover {
+  background-color: #e91c1c;
+  color: #ffffff;
+}
+
+.nota-fiscal {
+  display: none;
+  margin-top: 30px;
+}
+
+.nota-fiscal h2 {
+  text-align: center;
+}
+
+.nota-fiscal p {
+  margin-bottom: 10px;
+}
+
+.cores {
+  background-color: rgba(204, 204, 204, 0.363);
+}
+
+
