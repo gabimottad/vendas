@@ -61,7 +61,6 @@ function finalizarVenda() {
 
   var confirmacao = confirm('Deseja realmente finalizar a venda?');
   if (confirmacao) {
-    // Calcular o total de vendas e criar uma tabela de itens
     var totalVendas = 0;
     var tabelaItens = '<table><tr><th>Produto</th><th>Quantidade</th><th>Preço</th></tr>';
     for (var i = 1; i < tabelaVendas.rows.length; i++) {
@@ -74,7 +73,6 @@ function finalizarVenda() {
     }
     tabelaItens += '</table>';
 
-    // Atualizar os elementos da nota fiscal com os valores corretos
     var produtoNotaElement = document.getElementById('produtoNota');
     var quantidadeNotaElement = document.getElementById('quantidadeNota');
     var precoNotaElement = document.getElementById('precoNota');
@@ -85,12 +83,10 @@ function finalizarVenda() {
     precoNotaElement.textContent = '';
     totalNotaElement.textContent = 'Total: R$ ' + totalVendas.toFixed(2);
 
-    // Limpar a tabela de vendas e o total de vendas
     tabelaVendas.innerHTML = '<tr><th>Produto</th><th>Quantidade</th><th>Preço</th><th>Total</th></tr>';
     totalVendasElement.textContent = 'Total de Vendas: R$ 0.00';
     alert('Venda finalizada com sucesso!');
 
-    // Exibir a nota fiscal e o botão de imprimir
     document.getElementById('notaFiscal').style.display = 'block';
     document.getElementById('imprimirButton').style.display = 'block';
   }
